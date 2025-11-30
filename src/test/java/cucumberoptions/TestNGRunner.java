@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = "src/test/java/Features",glue = "stepdefinition",monochrome = true,tags = "@smoke"
+@CucumberOptions(features = "src/test/java/Features",glue = "stepdefinition",monochrome = true,tags="@smoke or @sanity"
 ,plugin= {"pretty","html:target/cucumber.html","json:target/cucumber.json","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:s",
 		"rerun:target/failed.txt"})
 public class TestNGRunner extends AbstractTestNGCucumberTests{

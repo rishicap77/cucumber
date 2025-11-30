@@ -17,6 +17,7 @@ public class homepage {
 	By addtocart=By.xpath("//button[text()='ADD TO CART']");
 	By cartview=By.xpath("//img[@alt='Cart']");
 	By chechnxt=By.xpath("//button[text()='PROCEED TO CHECKOUT']");
+	By flightBtn=By.linkText("Flight Booking");
 	
 	public void searchAction(String product) {
 		driver.findElement(searchProduct).sendKeys(product);
@@ -49,5 +50,9 @@ public class homepage {
 	
 	public String verifypagetitle() {
 		return driver.getTitle();
+	}
+	
+	public void flightlinkClk() {
+		driver.findElement(flightBtn).click();
 	}
 }

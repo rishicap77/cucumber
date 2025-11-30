@@ -2,7 +2,7 @@
 Feature: search product funtionality
  
 
-@smoke
+ @sanity
   Scenario Outline: verify productname on homepage and on deals are same
     Given user is on greenkart homepage
     When user searches the product with shortname <product> corresponding fullname is displayed
@@ -11,4 +11,4 @@ Feature: search product funtionality
  Examples:
  |product|
  |tom|
- |beet|  
+ |carr|  
